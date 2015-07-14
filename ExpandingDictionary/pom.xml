@@ -4,11 +4,26 @@
   <artifactId>ExpandingDictionary</artifactId>
   <version>1.0</version>
   
-  <dependencies>  
-  	<dependency>
-  		<groupId>com.medallia.word2vec</groupId>
-  		<artifactId>Word2VecJava</artifactId>
-  		<version>0.9.0</version>
-	</dependency>
-  </dependencies>
+  <properties>
+              <nd4j.version>0.0.3.5.5.3</nd4j.version> 
+              <dl4j.version>0.0.3.3.3.alpha1</dl4j.version>
+            </properties>
+            
+            <dependencies>
+              <dependency>
+                 <groupId>org.deeplearning4j</groupId>
+                 <artifactId>deeplearning4j-ui</artifactId>
+                 <version>${dl4j.version}</version>
+               </dependency>
+               <dependency>
+                 <groupId>org.deeplearning4j</groupId>
+                 <artifactId>deeplearning4j-nlp</artifactId>
+                 <version>${dl4j.version}</version>
+               </dependency>
+               <dependency>
+                 <groupId>org.nd4j</groupId>
+                 <artifactId>nd4j-jblas</artifactId>
+                 <version>${nd4j.version}</version>
+               </dependency>
+            </dependencies>
 </project>
