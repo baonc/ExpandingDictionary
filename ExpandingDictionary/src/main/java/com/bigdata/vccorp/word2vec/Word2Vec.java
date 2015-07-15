@@ -20,6 +20,7 @@ import org.springframework.core.io.ClassPathResource;
  */
 public class Word2Vec {
 	private static final String INPUT_PATH = "NewsWordTraininng.txt";
+	private static final String OUTPUT_PATH = "src/main/resources/NewsWordTrainingVector.txt";
 	
 	private org.deeplearning4j.models.word2vec.Word2Vec vec;
 	
@@ -84,6 +85,6 @@ public class Word2Vec {
 		vec.fit();
 		
 		System.out.println("Save vector:");
-		WordVectorSerializer.writeWordVectors(vec, "src/main/resources/NewsWordTrainingVector.txt");
+		WordVectorSerializer.writeWordVectors(vec, OUTPUT_PATH);
 	}
 }
