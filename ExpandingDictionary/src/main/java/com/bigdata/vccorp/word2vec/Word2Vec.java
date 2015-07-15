@@ -1,5 +1,6 @@
-package com.bogdata.vccorp.word2vec;
+package com.bigdata.vccorp.word2vec;
 
+import org.deeplearning4j.models.embeddings.loader.WordVectorSerializer;
 import org.deeplearning4j.text.sentenceiterator.LineSentenceIterator;
 import org.deeplearning4j.text.sentenceiterator.SentenceIterator;
 import org.deeplearning4j.text.sentenceiterator.SentencePreProcessor;
@@ -75,11 +76,14 @@ public class Word2Vec {
 		});
 		
 		System.out.println("Build model...");
-		org.deeplearning4j.models.word2vec.Word2Vec vec = new org.deeplearning4j.models.word2vec
+		vec = new org.deeplearning4j.models.word2vec
 				.Word2Vec.Builder().batchSize(batchSize).sampling(1e-5)
 				.minWordFrequency(minWordFrequency).useAdaGrad(useAdaGrad).layerSize(layerSize)
 				.iterations(iterations).learningRate(learningRate).minLearningRate(1e-2)
 				.negativeSample(0).iterate(iter).tokenizerFactory(tokenizer).build();
 		vec.fit();
+		
+		System.out.println("Save vector:");
+		WordVectorSerializer.writeWordVectors(vec, "src/main/resources/NewsWordTrainingVector.txt");
 	}
 }
