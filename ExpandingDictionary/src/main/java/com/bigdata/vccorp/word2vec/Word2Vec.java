@@ -87,4 +87,15 @@ public class Word2Vec {
 		System.out.println("Save vector:");
 		WordVectorSerializer.writeWordVectors(vec, OUTPUT_PATH);
 	}
+	
+	/**
+	 * Test function
+	 * 
+	 * @param args			: main args
+	 * @throws Exception	: IOException
+	 */
+	public static void main(String args[]) throws Exception {
+		Word2Vec word2Vec = new Word2Vec();
+		word2Vec.word2Vec(1000, 5, false, 300, 30, 0.25);
+	}
 }
