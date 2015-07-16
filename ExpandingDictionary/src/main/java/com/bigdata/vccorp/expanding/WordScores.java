@@ -14,6 +14,12 @@ public class WordScores {
 	private double positiveScore;
 	private double negativeScore;
 	
+	public WordScores(String word, double positiveScore, double negativeScore) {
+		this.word = word;
+		this.positiveScore = positiveScore;
+		this.negativeScore = negativeScore;
+	}
+	
 	/**
 	 * Set word
 	 * 

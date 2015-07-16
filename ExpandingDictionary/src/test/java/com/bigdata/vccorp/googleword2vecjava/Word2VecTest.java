@@ -29,13 +29,13 @@ public class Word2VecTest {
 	
 	public static void main(String args[]) throws Exception {
 		int batchSize = 1000;
-		int iterations = 100;
+		int iterations = 1;
 		int layerSize = 300;
 		
 		Nd4j.getRandom().setSeed(300);
 		
 		log.info("Load data...");
-		ClassPathResource resource = new ClassPathResource("NewsWordTraininng.txt");
+		ClassPathResource resource = new ClassPathResource("raw_sentences.txt");
 		SentenceIterator iter = new LineSentenceIterator(resource.getFile());
 		iter.setPreProcessor(new SentencePreProcessor() {
 			private static final long serialVersionUID = 1L;

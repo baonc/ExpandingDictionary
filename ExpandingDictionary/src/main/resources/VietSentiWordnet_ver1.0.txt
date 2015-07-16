@@ -35,7 +35,7 @@ a	00050446	0.125	0.625	giản_lược#1	rút gọn hoặc giảm bớt; "trình 
 a	00061262	0.5	0	khéo_tay#1	nhanh, giỏi hoặc chuyên nghiệp khi làm gì đó; "cô ấy khéo tay may vá"
 a	00061664	0.625	0	nguyên_chất#4	chỉ thuần một chất, không có chất khác lẫn vào hoặc không có sự pha chế ; "vàng nguyên chất"
 a	00064479	0.625	0	thuận_lợi#1	điều kiện tốt để làm gì đó; "thời tiết thuận lợi"
-a	00064787	0.625	0	có lợi#1	có phẩm chất, chất lượng cao hơn mức bình thường; "lúa tốt"
+a	00064787	0.625	0	có_lợi#1	có phẩm chất, chất lượng cao hơn mức bình thường; "lúa tốt"
 a	00065064	0.75	0	tích_cực#3	có tác dụng khẳng định, thúc đẩy sự phát triển; "cô ấy có suy nghĩ tích cực"
 a	00065488	0	0.75	bất_lợi#1	gây thiệt hại; "đó là vấn đề bất lợi với chúng ta"
 a	00067038	0.625	0	khuyến_khích#1	xứng đáng được đề nghị hoặc đề xuất; "nó được khuyến khích làm việc đó"
@@ -1036,4 +1036,4 @@ a	001937983	0.125	0.5	khờ#1	kém về trí khôn và sự tinh nhanh, không �
 a	001937984	0	0.75	ngu#1	rất kém về trí lực, không hiểu biết gì về cả những điều ai cũng hiểu, cũng biết ; "Rồng vàng tắm nước ao tù, Người khôn ở với người ngu bực mình." 
 a	001937986	0.75	0	giỏi#1	có trình độ cao, đáng được khâm phục, khen ngợi ; "giáo viên dạy giỏi"
 a	svx1937981	0	0.5	xấu#1 xấu_xí#1	có hình dáng và những đường nét rất khó coi (thường nói về đồ vật, đôi khi nói về ai đó) ; "cái máy trông rất xấu"
-a	svx1937982	0	0.3	vung tay quá trán#1	
+a	svx1937982	0	0.3	vung_tay_quá_trán#1	
